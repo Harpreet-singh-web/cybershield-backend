@@ -5,7 +5,7 @@ import API from "../services/api"
 
 import "./ThreatDashboard.css"
 
-import ThreatGlobe from "../components/ThreatGlobe.jsx"
+import ThreatGlobe from "../Components/ThreatGlobe.jsx"
 
 export default function ThreatDashboard(){
 
