@@ -1,0 +1,45 @@
+.globe-container{
+
+  margin-top: 40px;
+
+  width: 100%;
+
+  height: 750px;
+
+  border-radius: 25px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at center,
+      #0f172a,
+      #020617
+    );
+
+  border:
+    1px solid rgba(0,255,255,0.2);
+
+  box-shadow:
+    0 0 40px rgba(0,255,255,0.1);
+
+}
+
+.globe-title{
+
+  position: absolute;
+
+  z-index: 10;
+
+  padding: 20px;
+
+  color: cyan;
+
+  font-size: 28px;
+
+  font-weight: bold;
+
+  text-shadow:
+    0 0 15px cyan;
+
+}

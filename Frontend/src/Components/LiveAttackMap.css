@@ -1,0 +1,15 @@
+.live-map-container{
+  margin-top: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #00ffff44;
+}
+
+.leaflet-map{
+  height: 500px;
+  width: 100%;
+}
+
+.leaflet-container{
+  background: #020617;
+}

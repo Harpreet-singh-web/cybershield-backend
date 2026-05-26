@@ -1,0 +1,261 @@
+.user-dashboard{
+  min-height: 100vh;
+  padding: 40px;
+
+  background:
+    radial-gradient(circle at top,
+    #111827 0%,
+    #050816 45%,
+    #02040f 100%);
+
+  color: #ffffff;
+
+  font-family: "Poppins", sans-serif;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.user-dashboard h1{
+
+  font-size: 3.2rem;
+
+  font-weight: 700;
+
+  margin-bottom: 12px;
+
+  color: #ffe600;
+
+  text-shadow:
+    0 0 12px rgba(255,230,0,0.4);
+}
+
+.subtitle{
+
+  font-size: 1rem;
+
+  color: #9ca3af;
+
+  margin-bottom: 50px;
+
+  letter-spacing: 1px;
+}
+
+/* =========================
+   DASHBOARD CARDS
+========================= */
+
+.dashboard-cards{
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(280px,1fr));
+
+  gap: 30px;
+
+  margin-bottom: 55px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card{
+
+  background:
+    rgba(10,15,30,0.96);
+
+  border:
+    1px solid rgba(255,230,0,0.15);
+
+  border-radius: 22px;
+
+  padding: 30px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 0 25px rgba(255,230,0,0.08);
+}
+
+/* TOP LINE */
+
+.card::before{
+
+  content:"";
+
+  position:absolute;
+
+  top:0;
+  left:0;
+
+  width:100%;
+  height:4px;
+
+  background:#ffe600;
+}
+
+/* CARD TITLE */
+
+.card h2{
+
+  font-size: 1.2rem;
+
+  margin-bottom: 18px;
+
+  color: #cbd5e1;
+
+  letter-spacing: 1px;
+}
+
+/* CARD NUMBER */
+
+.card p{
+
+  font-size: 3rem;
+
+  font-weight: 700;
+
+  margin:0;
+}
+
+/* =========================
+   SUCCESS CARD
+========================= */
+
+.success{
+
+  border:
+    1px solid rgba(0,255,140,0.25);
+}
+
+.success p{
+  color:#00ff99;
+}
+
+/* =========================
+   FAILED CARD
+========================= */
+
+.failed{
+
+  border:
+    1px solid rgba(255,77,109,0.25);
+}
+
+.failed p{
+  color:#ff4d6d;
+}
+
+/* =========================
+   ACTIVITY SECTION
+========================= */
+
+.activity-section{
+  margin-top: 20px;
+}
+
+.activity-section h2{
+
+  font-size: 2.3rem;
+
+  margin-bottom: 30px;
+
+  color:#ffe600;
+
+  text-shadow:
+    0 0 10px rgba(255,230,0,0.25);
+}
+
+/* =========================
+   ACTIVITY CARD
+========================= */
+
+.activity-card{
+
+  background:
+    rgba(10,15,30,0.95);
+
+  border:
+    1px solid rgba(255,255,255,0.06);
+
+  border-left:
+    4px solid #ffe600;
+
+  padding: 22px;
+
+  border-radius: 18px;
+
+  margin-bottom: 22px;
+
+  box-shadow:
+    0 0 20px rgba(255,230,0,0.05);
+}
+
+.activity-card p{
+
+  margin: 12px 0;
+
+  color: #e5e7eb;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+.activity-card strong{
+
+  color:#ffe600;
+
+  margin-right:8px;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+  width:10px;
+}
+
+::-webkit-scrollbar-track{
+  background:#050816;
+}
+
+::-webkit-scrollbar-thumb{
+
+  background:#ffe600;
+
+  border-radius:10px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+  .user-dashboard{
+    padding:20px;
+  }
+
+  .user-dashboard h1{
+    font-size:2.3rem;
+  }
+
+  .dashboard-cards{
+    grid-template-columns:1fr;
+  }
+
+  .card p{
+    font-size:2.4rem;
+  }
+
+  .activity-section h2{
+    font-size:1.8rem;
+  }
+}
